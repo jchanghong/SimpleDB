@@ -6,6 +6,7 @@
 package c.h.database.interfacs;
 
 import c.h.database.model.Database;
+import c.h.database.model.Table;
 import c.h.database.model.TableRow;
 
 import java.util.List;
@@ -16,26 +17,33 @@ import java.util.List;
 public class MTable implements TableOperation {
     public MTable() {
     }
-    public TableRow findrow(String pkey) {
+
+    @Override
+    public TableRow findrow(Table table, String pkey) {
         return null;
     }
 
-    public List<TableRow> findrows(String... keys) {
+    @Override
+    public List<TableRow> findrows(Table table, String... keys) {
         return null;
     }
 
-    public boolean droprow(String key) {
+    @Override
+    public boolean droprow(Table table, String key) {
         return false;
     }
 
-    public boolean droprows(String... key) {
+    @Override
+    public boolean droprows(Table table, String... key) {
         return false;
     }
 
-    public boolean insertrow(String key, TableRow row) {
+    @Override
+    public boolean insertrow(Table table, String key, TableRow row) {
         return false;
     }
 
+    @Override
     public Database getdb() {
         return null;
     }

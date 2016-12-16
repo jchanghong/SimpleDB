@@ -7,6 +7,8 @@ package c.h.database.interfacs;
 
 import c.h.database.model.Database;
 import c.h.database.model.Table;
+import c.h.database.model.TableFiled;
+import c.h.database.model.TableRow;
 
 import java.util.List;
 
@@ -29,8 +31,13 @@ public interface DBoperation {
 
     Table findtable(String tablename);
 
-    Table createtable(String tablename);
+    Table createtable(String tablename, List<TableFiled> tableFileds);
 
     boolean droptable(String tablename);
+
+    //sql
+    boolean exesqlupdate(String sql);
+
+    List<TableRow> exequery(String sql);
 
 }

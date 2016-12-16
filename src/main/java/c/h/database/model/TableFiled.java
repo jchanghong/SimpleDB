@@ -11,9 +11,9 @@ package c.h.database.model;
 public class TableFiled {
     private boolean pkey;
     private String name;
-    private Class types;
+    private String types;
 
-    public TableFiled(String name, Class types) {
+    public TableFiled(String name, String types) {
         this.name = name;
         this.types = types;
     }
@@ -34,11 +34,11 @@ public class TableFiled {
         this.name = name;
     }
 
-    public Class getTypes() {
+    public String getTypes() {
         return types;
     }
 
-    public void setTypes(Class types) {
+    public void setTypes(String types) {
         this.types = types;
     }
 }

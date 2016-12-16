@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import java.util.SortedMap;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by jiang on 2016/12/16 0016.
