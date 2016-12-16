@@ -17,27 +17,23 @@ import java.io.File;
 public class Database {
     private String name;
     private String filename;
-    private DB jdbm;
+    public DB jdbm;
 
     public void close() {
-        if (jdbm != null) {
             jdbm.close();
-
-        }
     }
-    private static String getfilename(String name) {
-        StringBuilder builder = new StringBuilder();
-        builder.append(Constant.db_dir + "/");
-//        builder.append(name + "/");
-        builder.append(name);
-        return builder.toString();
-    }
+//    private static String getfilename(String name) {
+//        StringBuilder builder = new StringBuilder();
+//        builder.append(Constant.db_dir + "/");
+////        builder.append(name + "/");
+//        builder.append(name);
+//        return builder.toString();
+//    }
 
     public Database(String name) {
         this.name = name;
         init();
         jdbm = DBMaker.openFile(filename).make();
-//        jdbm.createTreeMap("tree");
     }
 
     public void init() {
@@ -45,7 +41,7 @@ public class Database {
         if (!file.exists()) {
             file.mkdirs();
         }
-        System.out.println(file.getAbsoluteFile());
+//        System.out.println(file.getAbsoluteFile());
         StringBuilder builder = new StringBuilder();
         builder.append(Constant.db_dir + "/");
         builder.append(name + "/");
