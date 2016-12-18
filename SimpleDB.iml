@@ -31,5 +31,16 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="Maven: com.orientechnologies:orientdb-server:2.2.13" level="project" />
+    <orderEntry type="library" name="Maven: com.orientechnologies:orientdb-client:2.2.13" level="project" />
+    <orderEntry type="library" name="Maven: com.orientechnologies:orientdb-core:2.2.13" level="project" />
+    <orderEntry type="library" name="Maven: org.xerial.snappy:snappy-java:1.1.0.1" level="project" />
+    <orderEntry type="library" name="Maven: com.googlecode.concurrentlinkedhashmap:concurrentlinkedhashmap-lru:1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: com.orientechnologies:orientdb-tools:2.2.13" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.6.0" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.6.0" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.6.0" level="project" />
+    <orderEntry type="library" name="Maven: javax.mail:mail:1.4.7" level="project" />
+    <orderEntry type="library" name="Maven: javax.activation:activation:1.1" level="project" />
   </component>
 </module>

@@ -16,7 +16,7 @@ public class MDBTest {
     @Test
     public void exesqlupdate() throws Exception {
 
-        MDB.getDboperation().exesqlupdate("create table ta(id int)");
+//        MDB.getDboperation().exesqlupdate("create table ta(id int)");
     }
 
     @Test
